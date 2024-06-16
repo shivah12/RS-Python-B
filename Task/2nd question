@@ -1,0 +1,15 @@
+a=input("words")
+def countingword(word):
+  word_dict={}
+  for char in word:
+    if char != ' ':
+     if char in word_dict:
+        word_dict[char]+=1
+     else:
+        word_dict[char]=1
+    sorted_words=sorted(word_dict.keys(), key=lambda x:(x.islower(),x))
+
+  for char in sorted_words:
+   print(f"{char}->{word_dict[char]}")         
+word=a
+countingword(word)
