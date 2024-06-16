@@ -1,0 +1,13 @@
+a = input("Enter names separated by commas (,): ")
+b = a.split(",")
+def count_name(namelist):
+    frequency = {}
+    for name in namelist:
+        if name in frequency:
+            frequency[name] += 1
+        else:
+            frequency[name] = 1
+    sorted_names = sorted(frequency.keys())
+    for name in sorted_names:
+        print(f"{name} -> {frequency[name]}")
+count_name(b)
