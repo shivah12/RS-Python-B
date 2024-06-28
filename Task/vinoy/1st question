@@ -1,0 +1,9 @@
+a=input("word1")
+b=input("word2")
+if len(a)!=len(b):
+  print("These words are not anagrams")
+else:
+  if sorted(a)==sorted(b):
+    print("These words are anagrans")
+  else:
+    print("These words are not anagrams")
