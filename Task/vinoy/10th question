@@ -1,0 +1,14 @@
+matrix = []
+for _ in range(3):
+    rows = [int(x) for x in input("Enter 3 integer separated by ','for a row: ").split(",")]
+    matrix.append(rows)
+    print(matrix)    
+matrix_1=[[matrix[i][j]for j in range(3)]for i in range(3)]
+for rows in matrix_1:
+    print(*rows)
+#to make the transpose matrix
+transpose_matrix = [[matrix[i][j] for i in range(3)] for j in range(3)]
+# the transpose matrix
+print("Transpose matrix:")
+for rows in transpose_matrix:
+    print(*rows)
