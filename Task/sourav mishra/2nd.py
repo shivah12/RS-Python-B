@@ -4,7 +4,7 @@ def character_frequency(string):
 
    
     for char in string:
-        if char.isalpha():  
+          
             if char in frequency:
                 frequency[char] += 1
             else:
