@@ -1,0 +1,12 @@
+number = input("Enter a number: ")
+digits = [int(digit) for digit in number]
+def plus_one(digits):
+   
+    for i in reversed(range(len(digits))):  
+        if digits[i] < 9:            
+            digits[i] += 1
+            return digits       
+        digits[i] = 0    
+    return [1] + digits
+incremented_digits = plus_one(digits)
+print("incremented number:", incremented_digits)
